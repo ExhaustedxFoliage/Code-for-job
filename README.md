@@ -1,7 +1,7 @@
 # Code-for-job
-def multiply(*arguments):
-    result = 1
-    for numbers in arguments:
-        result = result * numbers
-    return result
-print()
+def multiply(*arguments): # Функция возвращает результат умножения переданных множителей. Также * здесь для произвольного количества чисел для умножения.
+    result = 1 # 1 число нейтрально, поэтому я его и взял
+    for numbers in arguments: # Здесь переменная result умножается на numbers то есть множители на 1. Тем самым мы получаем ответ
+        result = result * numbers 
+    return result # Возвращение результата, то есть ответа
+print(multiply()) # Выписывание самого ответа.
